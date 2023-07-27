@@ -6,6 +6,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="container">
       <header>
@@ -49,16 +50,16 @@
               alt="main profile picture"
             />
             <div class="greeting">
-            <h2>Hi there,</h2>
-            <h1>Robert Juru (@robert)</h1>
+              <h2>Hi there,</h2>
+              <h1>Robert Juru (@robert)</h1>
+            </div>
           </div>
-        </div>
           <div class="header-buttons">
             <button>New</button>
             <button>Upload</button>
             <button>Share</button>
           </div>
-        
+        </div>
       </header>
 
       <aside>
@@ -68,37 +69,235 @@
             src="photos/dashboard-icon.png"
             alt="dashboard icon"
           />
-          <h1>Dashboard</h1>
+          <h1 class="nav-title">Dashboard</h1>
         </div>
 
         <nav class="sidebar">
           <ul class="first-section">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Messagess</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Tasks</a></li>
-            <li><a href="#">Communities</a></li>
+            <li>
+              <img class="icon" src="photos/home.svg" alt="Home icon" />
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <img class="icon" src="photos/profile.svg" alt="Profile icon" />
+              <a href="#">Profile</a>
+            </li>
+            <li>
+              <img class="icon" src="photos/messages.svg" alt="Messages icon" />
+              <a href="#">Messages</a>
+            </li>
+            <li>
+              <img class="icon" src="photos/history.svg" alt="History icon" />
+              <a href="#">History</a>
+            </li>
+            <li>
+              <img class="icon" src="photos/tasks.svg" alt="Tasks icon" />
+              <a href="#">Tasks</a>
+            </li>
+            <li>
+              <img
+                class="icon"
+                src="photos/communities.svg"
+                alt="Communities icon"
+              />
+              <a href="#">Communities</a>
+            </li>
           </ul>
           <ul class="second-section">
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Privacy</a></li>
+            <li>
+              <img class="icon" src="photos/settings.svg" alt="Settings icon" />
+              <a href="#">Settings</a>
+            </li>
+            <li>
+              <img class="icon" src="photos/support.svg" alt="Support icon" />
+              <a href="#">Support</a>
+            </li>
+            <li>
+              <img class="icon" src="photos/privacy.svg" alt="Privacy icon" />
+              <a href="#">Privacy</a>
+            </li>
           </ul>
         </nav>
       </aside>
+      <h2>test</h2>
 
       <main>
         <section class="projects">
-          <h2>Your Projects</h2>
+          <!-- <h2 class="main-header-projects">My Projects</h2> -->
+          <!-- <div></div> -->
+          <article class="project" id="dashboard">
+            <h3>Dashboard</h3>
+            <img src="photos/dashboard.png" alt="dashboard project" class="project-image">
+            <p>
+              Responsive portfolio dashboard displaying projects using Grid and
+              Flexbox.
+            </p>
+            <div class="project-icons">
+              <img src="photos/eye.svg" alt="eye icon" id="project-icon" class="icon" />
+              <div class="svg-wrapper">
+                <!-- <svg class="icon" id="project-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" /></svg> -->
+              </div>
+              <img src="photos/github.svg" alt="github icon" id="project-icon" class="icon" />
+            </div>
+          </article>
+          <article class="project" id="calculator">
+            <h3>Calculator</h3>
+            <img
+              class="project-image"
+              src="photos/calculator.png"
+              alt="calculator project"
+            />
+            <p>
+              Versatile calculator with memory for saving results and performing
+              multiple operations, powered by HTML, CSS & JS.
+            </p>
+            <div class="project-icons">
+              <img src="photos/eye.svg" alt="eye icon" id="project-icon" class="icon" />
+              <img src="photos/github.svg" alt="github icon" id="project-icon" class="icon" />
+            </div>
+          </article>
+          <article class="project" id="etch-a-sketch">
+            <h3>Etch-a-Sketch</h3>
+            <img
+              class="project-image"
+              src="photos/etch-a-sketch.png"
+              alt="etch-a-sketch project"
+            />
+            <p>
+              Unleash your inner artist with this interactive Etch-a-Sketch game
+              built with HTML, CSS and JavaScript.
+            </p>
+            <div class="project-icons">
+              <img src="photos/eye.svg" alt="eye icon" id="project-icon" class="icon" />
+              <img src="photos/github.svg" alt="github icon" id="project-icon" class="icon" />
+            </div>
+          </article>
+          <article class="project" id="rock-paper-scissors">
+            <h3>Rock-Paper-Scissors</h3>
+            <img
+              class="project-image"
+              src="photos/rock-paper-scissors.png"
+              alt="rock-paper-scissors project"
+            />
+            <p>
+              Web-based game of Rock-Paper-Scissors, created using JavaScript,
+              HTML and CSS.
+            </p>
+            <div class="project-icons">
+              <img src="photos/eye.svg" alt="eye icon" id="project-icon" class="icon" />
+              <img src="photos/github.svg" alt="github icon" id="project-icon" class="icon" />
+            </div>
+          </article>
+          <article class="project" id="placeholder1">
+            <h3>Project Placeholder 1</h3>
+            <img
+              src="photos/project-in-progress.webp"
+              alt="work in progress photo"
+              class="project-image"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              tincidunt est malesuada tellus condimentum venenatis.
+            </p>
+            <div class="project-icons">
+              <img src="photos/eye.svg" alt="eye icon" id="project-icon" class="icon" />
+              <img src="photos/github.svg" alt="github icon" id="project-icon" class="icon" />
+            </div>
+          </article>
+          <article class="project" id="placeholder2">
+            <h3>Project Placeholder 2</h3>
+            <img
+              src="photos/project-in-progress.webp"
+              alt="work in progress photo"
+              class="project-image"
+            />
+            <p>
+              Nulla vehicula pretium dolor. Duis pretium quam et sapien commodo
+              posuere.
+            </p>
+            <div class="project-icons">
+              <img src="photos/eye.svg" alt="eye icon" id="project-icon" class="icon" />
+              <img src="photos/github.svg" alt="github icon" id="project-icon" class="icon" />
+            </div>
+          </article>
         </section>
-
         <section class="announcements">
           <h2>Announcements</h2>
+          <article class="announcement">
+            <h3>Site Maintenance</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              finibus ipsum sapien, nec semper felis tempor at.
+            </p>
+            <hr />
+            <h3>Community Share Day</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              commodo volutpat nisi, vel porttitor est dapibus quis.
+            </p>
+            <hr />
+            <h3>Updated Privacy Policy</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut
+              iaculis metus. Donec pellentesque nisi in nisl pretium maximus.
+            </p>
+          </article>
         </section>
+        <section class="trending">
+          <h2>Trending</h2>
+          <article class="trend">
+            <div class="user">
+              <img
+                class="profile-pic"
+                id="trending-profile-picture"
+                src="photos/cat.svg"
+                alt="cat profile picture"
+              />
+              <div class="user-description">
+                <span class="username">@tegan</span>
+                <span class="description">World Peace Builder</span>
+              </div>
+            </div>
 
-        <section class="recent-activity">
-          <h2>Recent Activity</h2>
+            <div class="user">
+              <img
+                class="profile-pic"
+                id="trending-profile-picture"
+                src="photos/elephant.svg"
+                alt="elephant profile picture"
+              />
+              <div class="user-description">
+                <span class="username">@morgan</span>
+                <span class="description">Super Cool Project</span>
+              </div>
+            </div>
+
+            <div class="user">
+              <img
+                class="profile-pic"
+                id="trending-profile-picture"
+                src="photos/hippo.svg"
+                alt="hippo profile picture"
+              />
+              <div class="user-description">
+                <span class="username">@kendall</span>
+                <span class="description">Life Changing App</span>
+              </div>
+            </div>
+
+            <div class="user">
+              <img
+                class="profile-pic"
+                id="trending-profile-picture"
+                src="photos/goat.svg"
+                alt="goat profile picture"
+              />
+              <div class="user-description">
+                <span class="username">@alex</span>
+                <span class="description">No Traffic Maker</span>
+              </div>
+            </div>
+          </article>
         </section>
       </main>
     </div>
